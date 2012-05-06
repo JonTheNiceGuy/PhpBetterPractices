@@ -23,13 +23,13 @@ class user
   protected $username = null;
   protected $password = null;
   // Processed Data
-  protected $transformed_lastloggedin = null
+  protected $transformed_lastloggedin = null;
 
   public function __construct()
   {
     if ($this->lastloggedin != null) {
       $this->transformed_lastloggedin = date("H:i:s", strtotime($this->lastloggedin))
-                             . " on " . date("d-M-Y" , strtotime($this->lastloggedin);
+                             . " on " . date("d-M-Y" , strtotime($this->lastloggedin));
     }
   }
 
